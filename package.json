@@ -1,0 +1,23 @@
+{
+  "name": "canvas",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun server/index.ts",
+    "dev": "bun --watch server/index.ts",
+    "proto:generate": "./scripts/generate-proto.sh"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.2",
+    "axios": "^1.7.7",
+    "hono": "^4.5.11",
+    "ts-proto": "^2.2.0",
+    "zod": "^3.23.8"
+  }
+}
